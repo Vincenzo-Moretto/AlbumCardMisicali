@@ -1,0 +1,71 @@
+body {
+  /* Impostazioni dello sfondo */
+  background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)), url("path/to/your/image.jpg");
+  background-size: cover; /* Adatta l'immagine allo schermo */
+  background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+
+  /* Fallback per il colore di sfondo */
+  background-color: #f8f9fa; /* Colore di sfondo di fallback */
+}
+
+img:hover {
+  transform: scale(1.2);
+  cursor: url("./assets/music-solid-241.png"), auto;
+}
+
+.card {
+  border-radius: 15px;
+}
+.card:hover {
+  z-index: 5;
+  transform: scale(1.1);
+  border: solid 1px rgb(0, 0, 0);
+  background-color: rgb(160, 160, 160);
+  cursor: url("./assets/headphone-regular-24.png"), auto;
+}
+
+img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+h5 {
+  text-align: center;
+  font-size: medium;
+}
+
+.card-text {
+  text-align: initial;
+  font-size: small;
+}
+.note-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.note-button i {
+  font-size: 32px;
+  color: #333; /* Colore dell'icona */
+  transition: color 0.3s ease; /* Effetto di transizione sul colore */
+}
+
+.note-button:hover i {
+  color: #000000; /* Colore dell'icona al passaggio del mouse */
+}
+
+#backButton {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000; /* Assicura che il bottone sia sopra tutti gli altri contenuti */
+}
+
+.scrolling-text {
+  white-space: nowrap; /* Assicura che il testo non vada a capo */
+  overflow: hidden; /* Nasconde il testo che va oltre i limiti */
+}
